@@ -1,0 +1,10 @@
+(echo "Truee")
+(echo "Truee" && echo "Truee")
+(echo "Truee" || echo "Falsee")
+(echo "Truee" && (echo "Truee"))
+(echo "Truee" || (echo "Falsee"))
+(echo "Truee" && (echo "Truee" && (echo "Truee")))
+([ -e test.txt ]) && (echo "Truee")
+(echo "Truee" || echo "Falsee") && echo "Truee"
+(echo "Truee" && echo "Truee") && (echo "Truee" && echo "Truee")
+(echo "Truee" && echo "Truee") || (echo "Falsee" && echo "Falsee")

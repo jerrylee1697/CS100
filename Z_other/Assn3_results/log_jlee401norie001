@@ -1,0 +1,360 @@
+1_test_operator_test
+1_test_operator_grades
+1_test_operator_test
+/home/csmajs/lle018/cs100/assignments/files/jlee401norie001/rshell
+/home/csmajs/lle018/cs100/assignments/files/jlee401norie001/gradingfiles/tstdir
+Running Tests
+---------
+0
+../tests/1_test_operator_test
+../tests/1_test_operator_grades
+
+--------------------------------
+../../rshell/bin/rshell ../tests/1_test_operator_test ../grades/1_test_operator_grades
+
+------------------------
+
+[2] test test.txt
+--student--
+$ (True)
+$ 
+--correct output--
+(TRUE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test false.txt
+--student--
+$ (False)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -e test.txt
+--student--
+$ (True)
+$ 
+--correct output--
+(TRUE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -e false.txt
+--student--
+$ (False)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -f test.txt
+--student--
+$ (False)
+$ 
+--correct output--
+(TRUE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -f false.txt
+--student--
+$ (False)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -f test_dir
+--student--
+$ (True)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -d test_dir
+--student--
+$ (False)
+$ 
+--correct output--
+(TRUE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] [ -d false_dir ]
+--student--
+$ (False)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -d test.txt
+--student--
+$ (True)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -e test.txt && echo "Truee"
+--student--
+$ "Truee"
+(True)
+$ 
+--correct output--
+(TRUE)
+Truee
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -e false.txt || echo "Truee"
+--student--
+$ "Truee"
+(False)
+$ 
+--correct output--
+(FALSE)
+Truee
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] [ -e test.txt ] || echo "Falsee"
+--student--
+$ (True)
+$ 
+--correct output--
+(TRUE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] test -e false.txt && echo "Falsee"
+--student--
+$ (False)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] (test -e test.txt)
+--student--
+$ (True)
+$ 
+--correct output--
+(TRUE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] [ -d test.txt ]
+--student--
+$ (True)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] (test -e test.txt && echo "Truee")
+--student--
+$ "Truee"
+(True)
+$ 
+--correct output--
+(TRUE)
+Truee
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] ([ -d test.txt ] && echo "Falsee")
+--student--
+$ "Falsee"
+(True)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] (test -d test.txt && (echo "True A" && echo "True B"))
+--student--
+$ "True A"
+"True B"
+(True)
+$ 
+--correct output--
+(FALSE)
+-----------
+
+exit status:  0
+/2 points?
+
+------------------------
+
+[2] (test -e test.txt && (echo "True A" && echo "True B"))
+--student--
+$ "True A"
+"True B"
+(True)
+$ 
+--correct output--
+(TRUE)
+True A
+True B
+-----------
+
+exit status:  0
+/2 points?
+
+
+../tests/1_test_operator_test grade: 28
+
+----------
+28
+---------
+1
+../tests/2_precedence_test
+../tests/2_precedence_grades
+
+--------------------------------
+../../rshell/bin/rshell ../tests/2_precedence_test ../grades/2_precedence_grades
+
+------------------------
+
+[3] (echo "Truee")
+--student--
+$ "Truee"
+$ 
+--correct output--
+Truee
+-----------
+
+exit status:  0
+/3 points?
+
+------------------------
+
+[3] (echo "Truee" && echo "Truee")
+--student--
+$ "Truee"
+"Truee"
+$ 
+--correct output--
+Truee
+Truee
+-----------
+
+exit status:  0
+/3 points?
+
+------------------------
+
+[3] (echo "Truee" || echo "Falsee")
+--student--
+$ "Truee"
+$ 
+--correct output--
+Truee
+-----------
+
+exit status:  0
+/3 points?
+
+------------------------
+
+[3] (echo "Truee" && (echo "Truee"))
+--student--
+$ "Truee"
+"Truee"
+$ 
+--correct output--
+Truee echo truee
+-----------
+
+exit status:  0
+/3 points?
+
+------------------------
+
+[3] (echo "Truee" || (echo "Falsee"))
+--student--
+$ "Truee"

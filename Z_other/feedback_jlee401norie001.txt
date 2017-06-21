@@ -1,0 +1,13 @@
+Assignment 3 Grading
+--------------------
+
+10 /10 points for well commented code and following style guidelines
+20 /20 points for sufficient test cases
+28 points for 1_test_operator_test
+18 points for 2_test_precedence_test
+
+--------------------
+Total: 76 / 100
+
+Your shell broke the auto grader :(
+I graded it manaully. Please refer to the logs for any inconsistency
